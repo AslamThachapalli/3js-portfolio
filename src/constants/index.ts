@@ -118,7 +118,7 @@ import {
   
   const experiences = [
     {
-      title: "Flutter Developer Intern",
+      title: "Software Developer - Intern",
       company_name: "Kohbee Technologies Pvt Ltd",
       icon: kohbee,
       iconBg: "#1D797E",
@@ -132,7 +132,7 @@ import {
       ],
     },
     {
-      title: "Freelance Flutter Developer",
+      title: "Freelance Software Developer",
       company_name: "Brain Podium Technologies Pvt Ltd",
       icon: brainpodium,
       iconBg: "#FFFFFF",
@@ -148,17 +148,18 @@ import {
       ],
     },
     {
-      title: "Flutter Developer",
+      title: "Software Developer",
       company_name: "Digichorus Technologies Pvt Ltd",
       icon: digichorus,
       iconBg: "#FFFFFF",
       date: "July 2023 - Present",
       points: [
         "Developed mobile app solution for clients Qatar National Bank (QNB), Doha Commercial bank (DCB) and Qatar Insurance Corporation (QIC)",
-        "Led initial development and architecture of mobile applications for QNB and DCB.",
+        "Bootstrapped and led initial development of mobile applications for QNB and DCB.",
         "Created a comprehensive design system for standardizing UI components.",
         "Improved QIC's existing Flutter web performance by 60% and provided tailored solution for payment platform integration.",
         "Trained a team of 4 at QIC on writing clean, scalable code in Flutter using Clean Architecture.",
+        "Firebase Cloud Messaging (FCM) is used to integrate push notification functionality.",
         "Researched Micro-App Architecture in Flutter using git submodules and Melos.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
