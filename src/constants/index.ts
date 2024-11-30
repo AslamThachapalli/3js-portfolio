@@ -25,6 +25,9 @@ import {
     notes,
     vocalisai,
     kaushik,
+    spotbio,
+    lingai,
+    ecommerce,
   } from "../assets/index";
   
   export const navLinks = [
@@ -179,6 +182,110 @@ import {
   
   const projects = [
     {
+      name: "Spotbio",
+      description:
+        "Spotbio enables users to create personalized bios with links to websites, social accounts, and more, hosted at unique URLs (e.g., spotbio.app/[username]).",
+      tags: [
+        {
+          name: "NextJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Typescript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Firebase Storage",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "PostgreSQL",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: spotbio,
+      source_code_link: "https://github.com/AslamThachapalli/spotbio",
+      website_link: "https://spotbio.app",
+    },
+    {
+      name: "Ling AI",
+      description:
+        "An AI-powered Thai Tutor app enabling users to learn Thai through interactive voice-based conversations, leveraging speech recognition and NLP.",
+      tags: [
+        {
+          name: "NextJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "ExpressJS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Prisma ORM",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "OpenAI",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Redux",
+          color: "yellow-text-gradient",
+        },
+      ],
+      image: lingai,
+      source_code_link: null,
+      website_link: "https://ling-ai-tutor.web.app/",
+    },
+    {
+      name: "E-Commerce App",
+      description:
+        "Developed an e-commerce platform to sell laptops, with real-time inventory management and scalable architecture.",
+      tags: [
+        {
+          name: "ReactJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Firebase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Recoil",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Razorpay",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Shiprocket",
+          color: "purple-text-gradient",
+        },
+      ],
+      image: ecommerce,
+      source_code_link: "https://github.com/AslamThachapalli/rhit-ecomm",
+      website_link: 'https://ecommerce.aslamthachapalli.com/',
+    },
+    {
+      name: "Vocalis AI",
+      description:
+        "This is a voice assistant app developed with flutter using OpenAI apis. The app uses ChatGPT and Dall-E AI image generation.",
+      tags: [
+        {
+          name: "flutter",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "openai-api",
+          color: "green-text-gradient",
+        },
+      ],
+      image: vocalisai,
+      source_code_link: "https://github.com/AslamThachapalli/vocalis_ai",
+      website_link: null,
+    },
+    {
       name: "WebRTC Peer Chat",
       description:
         "Peer to Peer Video Chat application using WebRTC Protocol. Agora realtime messaging is used for signalling.",
@@ -198,23 +305,7 @@ import {
       ],
       image: webrtc,
       source_code_link: "https://github.com/AslamThachapalli/webrtc-peer-chat",
-    },
-    {
-      name: "Vocalis AI",
-      description:
-        "This is a voice assistant app developed with flutter using OpenAI apis. The app uses ChatGPT and Dall-E AI image generation.",
-      tags: [
-        {
-          name: "flutter",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "openai-api",
-          color: "green-text-gradient",
-        },
-      ],
-      image: vocalisai,
-      source_code_link: "https://github.com/AslamThachapalli/vocalis_ai",
+      website_link: "https://peer-sync.web.app/lobby.html",
     },
     {
       name: "Face Authentication",
@@ -236,6 +327,7 @@ import {
       ],
       image: faceauth,
       source_code_link: "https://github.com/AslamThachapalli/face-authentication-app",
+      website_link: null,
     },
     {
       name: "Netflix Clone",
@@ -257,6 +349,7 @@ import {
       ],
       image: netflix,
       source_code_link: "https://github.com/AslamThachapalli/Netflix_Clone_App",
+      website_link: null,
     },
     {
       name: "Foodiee App",
@@ -278,6 +371,7 @@ import {
       ],
       image: foodie,
       source_code_link: "https://github.com/AslamThachapalli/foodiee_app",
+      website_link: null,
     },
     {
       name: "Notes App",
@@ -299,6 +393,7 @@ import {
       ],
       image: notes,
       source_code_link: "https://github.com/AslamThachapalli/Notes_App",
+      website_link: null,
     },
   ];
   

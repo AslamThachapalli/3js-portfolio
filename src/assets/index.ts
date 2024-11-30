@@ -32,6 +32,10 @@ import foodie from "./foodiee.svg";
 import netflix from "./netflix.jpg";
 import notes from "./notes.svg";
 import vocalisai from "./vocalisai.svg";
+import spotbio from "./spotbio.svg";
+import cloud from "./cloud.svg";
+import lingai from "./ling_ai.svg";
+import ecommerce from "./ecommerce.svg";
 
 import kaushik from "./kaushik.jpeg";
 
@@ -67,5 +71,9 @@ export {
   netflix,
   notes,
   vocalisai,
+  spotbio,
+  cloud,
+  lingai,
+  ecommerce,
   kaushik,
 };

@@ -1,12 +1,11 @@
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
-import { github } from "../assets";
+import { github, cloud } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../style";
-
 
 const ProjectCard = ({
   index,
@@ -15,6 +14,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  website_link,
 }: {
   index: number,
   name: string,
@@ -24,7 +24,8 @@ const ProjectCard = ({
     color: string;
   }[],
   image: string,
-  source_code_link: string,
+  source_code_link: string | null,
+  website_link: string | null,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -38,17 +39,27 @@ const ProjectCard = ({
             className='w-full h-full object-cover rounded-2xl'
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>
+          <div className='absolute inset-0 flex flex-col justify-end gap-2 m-3 card-img_hover'>
+            {website_link && (
+              <div
+                onClick={() => window.open(website_link, "_blank")}
+                className='blue-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              >
+                <img src={cloud} alt='website' className='w-1/2 h-1/2 object-contain' />
+              </div>
+            )}
+            {source_code_link && (
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              >
+                <img
+                  src={github}
+                  alt='source code'
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              </div>
+            )}
           </div>
         </div>
 
@@ -93,9 +104,11 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7'>
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <div key={`project-${index}`} className='flex'>
+            <ProjectCard index={index} {...project} />
+          </div>
         ))}
       </div>
     </>
